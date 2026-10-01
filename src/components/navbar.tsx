@@ -65,7 +65,7 @@ export default function Navbar() {
         {Object.entries(DATA.contact.social)
           .filter(([_, social]) => social.navbar)
           .map(([name, social], index) => {
-            const isExternal = social.url.startsWith("http");
+            const isExternal = social.url.startsWith("http") || social.url.endsWith(".pdf");
             const IconComponent = social.icon;
             return (
               <Tooltip key={`social-${name}-${index}`}>
