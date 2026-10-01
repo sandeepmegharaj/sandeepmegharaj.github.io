@@ -223,10 +223,11 @@ export function ProjectCard({
           >
             <ArrowUpRight className="h-4 w-4" aria-hidden />
           </Link>
-        </div>
-        <div className="text-xs flex-1 prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
-          <Markdown>{description}</Markdown>
-        </div>
+        {description ? (
+          <div className="text-xs flex-1 prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
+            <Markdown>{description}</Markdown>
+          </div>
+        ) : null}
         {tags && tags.length > 0 && (
           <div className="flex flex-wrap gap-1 mt-auto">
             {tags.map((tag) => {
