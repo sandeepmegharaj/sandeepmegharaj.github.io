@@ -223,6 +223,7 @@ export function ProjectCard({
           >
             <ArrowUpRight className="h-4 w-4" aria-hidden />
           </Link>
+        </div>
         {description ? (
           <div className="text-xs flex-1 prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
             <Markdown>{description}</Markdown>
