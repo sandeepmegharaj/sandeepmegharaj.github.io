@@ -81,7 +81,7 @@ export const DATA = {
   location: "Hyderabad, India",
   locationLink: "https://www.google.com/maps/place/Hyderabad",
   description:
-    "Software Engineer",
+    "Developer",
   summary:
     "Based in Hyderabad, India. I turn business requirements into technical solutions through System design integrating LLMs and optimising cost per usage. Strengths in Data Analysis with Microsoft Fabric and Agentic Development with Azure AI.\n\nBlending legacy with AI efficiency to reach the hierarchy of what's underneath.\n\nReach me via [email](mailto:sandeepmegharaj@gmail.com) or [book a call](tel:9347775873). See my code and contributions on [GitHub](https://github.com/sandeepmegharaj?tab=repositories).\n\nFind me on [LinkedIn](https://www.linkedin.com/in/sandeep-megharaj-87a9b525b/), [Twitter/X](https://x.com/sandeeepmegh), read my writing on [Medium](https://medium.com/@sandeepmegharaj), or grab my [resume](https://drive.google.com/file/d/1TPuXBLvvJfOpkwPrUAbvJoUQ4mFVJL5e/view?usp=sharing).",
   avatarUrl: "/sandeep_red.jpg",
