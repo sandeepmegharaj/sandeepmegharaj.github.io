@@ -202,31 +202,28 @@ export const DATA = {
     },
     {
       title: "Deep-Agent Data Lab",
-      href: "https://deepagent.streamlit.app/",
+      href: "/deepagent.png",
       dates: "Working Screenshot",
       active: true,
       description:
-        "Live execution screenshot of Deep-Agent Data Lab in action — planning multi-agent workflows, performing COVID-19 dataset analysis, executing 12 autonomous steps, and generating real-time interactive charts.",
+        "Working screenshot of the live agent workspace — autonomous task planning, COVID-19 dataset exploration, 12-step execution, and real-time visualization dashboards.",
       technologies: [
-        "Python",
-        "Streamlit",
-        "Deep Agents",
-        "Data Lab",
-        "Azure AI",
+        "Working Screenshot",
       ],
       links: [
-        {
-          type: "Working Screenshot",
-          href: "https://deepagent.streamlit.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
         {
           type: "Demo",
           href: "https://deepagent.streamlit.app/",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Full View",
+          href: "/deepagent.png",
+          icon: <Icons.globe className="size-3" />,
+        },
       ],
       image: "/deepagent.png",
+      imageClassName: "w-full h-64 sm:h-72 object-contain bg-neutral-950 p-1.5",
       logo: "/deepagent-icon.png",
       video: "",
     },

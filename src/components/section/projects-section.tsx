@@ -14,18 +14,19 @@ export default function ProjectsSection() {
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto auto-rows-fr">
                     {DATA.projects.map((project, id) => (
                         <BlurFade
-                            key={project.title}
+                            key={project.title + id}
                             delay={BLUR_FADE_DELAY * 12 + id * 0.05}
                             className="h-full"
                         >
                             <ProjectCard
                                 href={project.href}
-                                key={project.title}
+                                key={project.title + id}
                                 title={project.title}
                                 description={project.description}
                                 dates={project.dates}
                                 tags={project.technologies}
                                 image={project.image}
+                                imageClassName={(project as { imageClassName?: string }).imageClassName}
                                 video={project.video}
                                 logo={(project as { logo?: string }).logo}
                                 links={project.links}

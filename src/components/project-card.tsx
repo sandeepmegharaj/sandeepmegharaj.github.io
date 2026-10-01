@@ -84,6 +84,12 @@ const TECH_ICONS: Record<string, (props: React.SVGProps<SVGSVGElement>) => React
       <path d="M13.05 4.24 6.56 18.01H2l8.83-15.65h2.22zm1.61 5.09-2.31 4.9 3.86 5.56H7.95l1.65-3.5h5.45l-2.58-3.71 4.56-9.76h2.22l-4.64 6.51z" />
     </svg>
   ),
+  "Working Screenshot": (props) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+      <circle cx="12" cy="13" r="4" />
+    </svg>
+  ),
   "Claude Code": (props) => (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
       <path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z" />
@@ -92,18 +98,18 @@ const TECH_ICONS: Record<string, (props: React.SVGProps<SVGSVGElement>) => React
 };
 
 
-function ProjectImage({ src, alt }: { src: string; alt: string }) {
+function ProjectImage({ src, alt, className }: { src: string; alt: string; className?: string }) {
   const [imageError, setImageError] = useState(false);
 
   if (!src || imageError) {
-    return <div className="w-full h-48 bg-muted" />;
+    return <div className={cn("w-full h-48 bg-muted", className)} />;
   }
 
   return (
     <img
       src={getAssetPath(src)}
       alt={alt}
-      className="w-full h-48 object-cover bg-neutral-950"
+      className={cn("w-full h-48 object-cover bg-neutral-950", className)}
       onError={() => setImageError(true)}
     />
   );
@@ -117,6 +123,7 @@ interface Props {
   tags: readonly string[];
   link?: string;
   image?: string;
+  imageClassName?: string;
   video?: string;
   logo?: string;
   links?: readonly {
@@ -135,6 +142,7 @@ export function ProjectCard({
   tags,
   link,
   image,
+  imageClassName,
   video,
   logo,
   links,
@@ -161,12 +169,12 @@ export function ProjectCard({
               loop
               muted
               playsInline
-              className="w-full h-48 object-cover"
+              className={cn("w-full h-48 object-cover", imageClassName)}
             />
           ) : image ? (
-            <ProjectImage src={image} alt={title} />
+            <ProjectImage src={image} alt={title} className={imageClassName} />
           ) : (
-            <div className="w-full h-48 bg-muted" />
+            <div className={cn("w-full h-48 bg-muted", imageClassName)} />
           )}
         </Link>
         {links && links.length > 0 && (
