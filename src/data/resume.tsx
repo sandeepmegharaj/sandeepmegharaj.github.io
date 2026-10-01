@@ -170,6 +170,37 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Deep-Agent Data Lab",
+      href: "https://deepagent.streamlit.app/",
+      dates: "2026",
+      active: true,
+      description:
+        "Agentic AI workspace built with Python, Streamlit, LangChain, Azure AI Gpt-5 engine. It plans tasks, delegates research and data analysis, searches the web with Tavily, analyzes uploaded files in Data Lab, and exports dashboards and reports with replacement of a Data analyst.",
+      technologies: [
+        "Python",
+        "Streamlit",
+        "LangChain",
+        "Deep Agents",
+        "Tavily",
+        "Gpt5",
+      ],
+      links: [
+        {
+          type: "Demo",
+          href: "https://deepagent.streamlit.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/sandeepmegharaj/Deepagent",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/deepagent.png",
+      logo: "/deepagent-icon.png",
+      video: "",
+    },
+    {
       title: "AI Multi-Agent",
       href: "https://github.com/sandeepmegharaj/AI-Custom-Agent.git",
       dates: "2026",
