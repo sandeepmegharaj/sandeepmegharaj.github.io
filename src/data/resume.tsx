@@ -153,9 +153,9 @@ export const DATA = {
       location: "Remote",
       title: "Founding Developer",
       logoUrl: "/execron.png",
-      start: "March 2026",
-      end: "Present",
-      description: "",
+      start: "Mar '26",
+      end: "Sep '26",
+      description: "Co-built and launched DevFlow (devflow.execron.tech), a gamified developer productivity tracker with project-based time tracking, XP and rank progression, streaks, activity analytics with GitHub integration — grown 200+ users. Built and shipped AI-infused products focused on solving practical industry problems.",
     },
   ],
   education: [
