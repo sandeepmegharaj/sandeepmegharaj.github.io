@@ -81,9 +81,9 @@ export const DATA = {
   location: "Hyderabad, India",
   locationLink: "https://www.google.com/maps/place/Hyderabad",
   description:
-    "Developer",
+    "Data Engineer",
   summary:
-    "Based in Hyderabad, India. I turn business requirements into technical solutions through System design integrating LLMs and optimising cost per usage. Strengths in Data Analysis with **Microsoft Fabric** and Agentic Development with **Azure AI**.\n\nBlending legacy with AI efficiency to reach the hierarchy of what's underneath.\n\nReach me via [email](mailto:sandeepmegharaj@gmail.com) or [book a call](tel:9347775873). See my code and contributions on [GitHub](https://github.com/sandeepmegharaj?tab=repositories).\n\nFind me on [LinkedIn](https://www.linkedin.com/in/sandeep-megharaj-87a9b525b/), [Twitter/X](https://x.com/sandeeepmegh), read my writing on [Medium](https://medium.com/@sandeepmegharaj), or grab my [resume](https://drive.google.com/file/d/13jLG_untN-ytltVrwCUVygB1BJC7AUgN/view?usp=sharing).",
+    "Based in Hyderabad, India. I turn business requirements into technical solutions through System design integrating LLMs and optimising cost per usage. Strengths in Data Analysis with **Microsoft Fabric**, **Databricks**, and Agentic Development with **Azure AI**.\n\nBlending legacy with AI efficiency to reach the hierarchy of what's underneath.\n\nReach me via [email](mailto:sandeepmegharaj@gmail.com) or [book a call](tel:9347775873). See my code and contributions on [GitHub](https://github.com/sandeepmegharaj?tab=repositories).\n\nFind me on [LinkedIn](https://www.linkedin.com/in/sandeep-megharaj-87a9b525b/), [Twitter/X](https://x.com/sandeeepmegh), read my writing on [Medium](https://medium.com/@sandeepmegharaj), or grab my [resume](https://drive.google.com/file/d/1bGpO6NkjPKiJJ5tivDBZmNyHuaeScXl_/view?usp=sharing).",
   avatarUrl: "/sandeep_red.jpg",
   skills: [
     { name: "Python", icon: Python },
@@ -132,7 +132,7 @@ export const DATA = {
       },
       Resume: {
         name: "Resume",
-        url: "https://drive.google.com/file/d/13jLG_untN-ytltVrwCUVygB1BJC7AUgN/view?usp=sharing",
+        url: "https://drive.google.com/file/d/1bGpO6NkjPKiJJ5tivDBZmNyHuaeScXl_/view?usp=sharing",
         icon: Icons.resume,
         navbar: true,
       },
@@ -169,6 +169,66 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "Apex F1: Data Platform & AI",
+      href: "https://github.com/sandeepmegharaj/F1-Analysis-and-RAG-Agent",
+      dates: "2026",
+      active: true,
+      description:
+        "Formula 1 analytical data engineering platform with Medallion architecture (Bronze/Silver/Gold star schema) on Databricks Lakehouse & Delta Lake, Airflow orchestration, and an intelligent RAG knowledge assistant.",
+      technologies: [
+        "Databricks",
+        "Delta Lake",
+        "Apache Airflow",
+        "Python",
+        "DuckDB",
+        "RAG",
+      ],
+      links: [
+        {
+          type: "Live Demo",
+          href: "https://f1agent.streamlit.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/sandeepmegharaj/F1-Analysis-and-RAG-Agent",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/project1.png",
+      video: "",
+    },
+    {
+      title: "Sterling Financial Analytics",
+      href: "https://github.com/sandeepmegharaj/Sterling-Financial-Analytics-Power-BI-Fabric",
+      dates: "2026",
+      active: true,
+      description:
+        "End-to-end financial data engineering and warehousing platform utilizing Microsoft Fabric Lakehouse and Delta Lake, integrated with Azure AI Foundry (Azure OpenAI) for predictive financial insights and Power BI reporting.",
+      technologies: [
+        "Microsoft Fabric",
+        "Delta Lake",
+        "Azure AI Foundry",
+        "Power BI",
+        "SQL",
+        "Data Engineering",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://sandeepmegharaj.github.io/Sterling-Financial-Analytics-Power-BI-Fabric/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/sandeepmegharaj/Sterling-Financial-Analytics-Power-BI-Fabric",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/project2.png",
+      video: "",
+    },
     {
       title: "Deep-Agent Data Lab",
       href: "https://deepagent.streamlit.app/",
@@ -217,58 +277,6 @@ export const DATA = {
       image: "/deepagent.png",
       imageClassName: "w-full h-80 sm:h-[350px] object-contain bg-neutral-950 p-2",
       logo: "/deepagent-icon.png",
-      video: "",
-    },
-    {
-      title: "AI Multi-Agent",
-      href: "https://github.com/sandeepmegharaj/AI-Custom-Agent.git",
-      dates: "2026",
-      active: true,
-      description:
-        "Built a conversational multi-agent AI system using DeepAgents on LangGraph with Streamlit, featuring autonomous planning, real-time web search, and a confidence-scored AI news summarization subagent.",
-      technologies: [
-        "Python",
-        "LangGraph",
-        "DeepAgents",
-        "Streamlit",
-        "Claude Code",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/sandeepmegharaj/AI-Custom-Agent.git",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/project1.png",
-      video: "",
-    },
-    {
-      title: "AI Career Guide",
-      href: "https://ai-career-guidance-lyart.vercel.app/",
-      dates: "2026",
-      active: true,
-      description:
-        "Built a GenAI-powered full-stack SaaS platform delivering personalized career guidance through AI-driven assessments, learning roadmaps, resume analysis, and interview preparation.",
-      technologies: [
-        "React.js",
-        "Next.js",
-        "PostgreSQL",
-        "Prisma",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://ai-career-guidance-lyart.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/sandeepmegharaj/CareerguideAI.git",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/project2.png",
       video: "",
     },
   ],

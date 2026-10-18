@@ -58,6 +58,20 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+      <BlurFade delay={BLUR_FADE_DELAY * 4.5} className="-my-4">
+        <div className="flex items-center">
+          <a
+            href="https://checkmygit.com/sandeepmegharaj?template=minimal&theme=dark"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-border bg-card/60 hover:bg-muted text-sm font-medium text-foreground shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 group"
+          >
+            <Icons.github className="size-4 fill-current" />
+            <span>Explore GitHub Profile &amp; Repositories</span>
+            <ArrowUpRight className="size-3.5 text-muted-foreground group-hover:text-foreground group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+          </a>
+        </div>
+      </BlurFade>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
