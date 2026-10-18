@@ -8,9 +8,6 @@ const nextConfig = {
   },
   reactStrictMode: true,
   trailingSlash: true,
-  turbopack: {
-    root: ".",
-  },
 };
 
 // withContentCollections must be the outermost plugin
