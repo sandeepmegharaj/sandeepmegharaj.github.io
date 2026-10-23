@@ -83,13 +83,11 @@ export const DATA = {
   description:
     "Data Engineer",
   summary:
-    "Based in Hyderabad, India. I turn business requirements into technical solutions through System design integrating LLMs and optimising cost per usage. Strengths in Data Analysis with **Microsoft Fabric**, **Databricks**, and Agentic Development with **Azure AI**.\n\nBlending legacy with AI efficiency to reach the hierarchy of what's underneath.\n\nReach me via [email](mailto:sandeepmegharaj@gmail.com) or [book a call](tel:9347775873). See my code and contributions on [GitHub](https://github.com/sandeepmegharaj?tab=repositories).\n\nFind me on [LinkedIn](https://www.linkedin.com/in/sandeep-megharaj-87a9b525b/), [Twitter/X](https://x.com/sandeeepmegh), read my writing on [Medium](https://medium.com/@sandeepmegharaj), or grab my [resume](https://drive.google.com/file/d/1ZlzMDMrayFWdnB2ppx0SX_0OFtzS7zyp/view?usp=sharing).",
+    "Based in Hyderabad, India. I turn business requirements into technical solutions through System design integrating LLMs and optimising cost per usage. Strengths in Data Analysis with **Microsoft Fabric**, **Databricks**, and Agentic Development with **Azure AI**.\n\nBlending legacy with AI efficiency to reach the hierarchy of what's underneath.\n\nReach me via [email](mailto:sandeepmegharaj@gmail.com) or [book a call](tel:9347775873). See my code and contributions on [GitHub](https://github.com/sandeepmegharaj?tab=repositories).\n\nFind me on [LinkedIn](https://www.linkedin.com/in/sandeep-megharaj-87a9b525b/).",
   avatarUrl: "/sandeep_red.jpg",
   skills: [
     { name: "Python", icon: Python },
-    { name: "JavaScript", icon: JavaScriptIcon },
     { name: "ReactJS", icon: ReactLight },
-    { name: "NextJS", icon: NextjsIconDark },
     { name: "SQL", icon: Postgresql },
     { name: "MongoDB", icon: MongoDBIcon },
     { name: "n8n", icon: N8NIcon },
@@ -116,24 +114,6 @@ export const DATA = {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/sandeep-megharaj-87a9b525b/",
         icon: Icons.linkedin,
-        navbar: true,
-      },
-      X: {
-        name: "X",
-        url: "https://x.com/sandeeepmegh",
-        icon: Icons.x,
-        navbar: true,
-      },
-      Medium: {
-        name: "Medium",
-        url: "https://medium.com/@sandeepmegharaj",
-        icon: Icons.medium,
-        navbar: true,
-      },
-      Resume: {
-        name: "Resume",
-        url: "https://drive.google.com/file/d/1ZlzMDMrayFWdnB2ppx0SX_0OFtzS7zyp/view?usp=sharing",
-        icon: Icons.resume,
         navbar: true,
       },
       email: {
